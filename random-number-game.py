@@ -31,10 +31,10 @@ def main():
         guess_number +=1
         if guess == target_number:
             if guess_number == 1:
-                print(f"Yes, my number is {target_number}! You got it on the first try!")
+                print(f"\nYes, my number is {target_number}! You got it on the first try!")
                 correct_guess = True
             else:
-                print(f"Boom!! You got it in {guess_number} guesses! My number was {target_number}.")
+                print(f"\nBoom!! You got it in {guess_number} guesses! My number was {target_number}.")
                 correct_guess = True
         elif guess < target_number:
             guess = int(input(f"{guess} is too low. Try a larger number: "))
