@@ -36,10 +36,12 @@ def main():
             else:
                 print(f"\nBoom!! You got it in {guess_number} guesses! My number was {target_number}.")
                 correct_guess = True
-        elif guess < target_number:
+        elif guess < target_number and guess >= 1:
             guess = int(input(f"{guess} is too low. Try a larger number: "))
-        else:
+        elif guess > target_number and guess <= 100:
             guess = int(input(f"{guess} is too high. Try a smaller number: "))
+        else:
+            guess = int(input('Please choose a number between 1 and 100.'))
 
 
 # Call the main() function to execute program.
