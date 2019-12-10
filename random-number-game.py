@@ -39,7 +39,7 @@ def main():
         elif guess < target_number:
             guess = int(input(f"{guess} is too low. Try a larger number: "))
         else:
-            guess = int(input(f"{guess} is too hihgh. Try a smaller number: "))
+            guess = int(input(f"{guess} is too high. Try a smaller number: "))
 
 
 # Call the main() function to execute program.
