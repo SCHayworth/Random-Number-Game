@@ -50,8 +50,10 @@ def main():
                         guess = int(input('Please choose a number between 1 and 100: '))
                         guess_number -= 1
                 except ValueError:
-                    # If a the input is not an integer, prompt the user to try again and continue the game.
+                    # If a the input is not an integer, prompt the user to try again and continue the game
+                    # without counting that guess.
                     print('You must enter an integer between 1 and 100. Try again.\n')
+                    guess_number -= 1
                     continue
         except ValueError:
             # If the first guess is not an integer, prompt the user for an appropriate value.
